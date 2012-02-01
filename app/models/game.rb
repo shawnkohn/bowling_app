@@ -4,7 +4,10 @@ class Game
 
 	def initialize
 		@rolls = Array.new
+		@numFrames = 10
 	end
+
+	attr_reader :numFrames
 	
 	def roll(pins)
 		@rolls.push(pins)
